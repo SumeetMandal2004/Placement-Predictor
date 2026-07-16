@@ -52,14 +52,17 @@ if st.button("Predict Placement"): #creates a clickable button and inside only r
     etest_p_scaled = (etest_p - 50.00) / (98.00 - 50.00)
     mba_p_scaled = (mba_p - 51.21) / (77.89 - 51.21)
 
-    #Creating input array from model
-    input_data = [[
-        gender_enc, ssc_p_scaled, 0, hsc_p_scaled, 0, 
+    # Creating input DataFrame for model
+    input_data = pd.DataFrame([[
+        gender_enc, ssc_p_scaled, 0, hsc_p_scaled, 0,
         degree_p_scaled, workex_enc, etest_p_scaled,
         specialisation_enc, mba_p_scaled,
-        hsc_s_Commerce, hsc_s_Science, 
+        hsc_s_Commerce, hsc_s_Science,
         degree_t_Others, degree_t_SciTech
-    ]]
+    ]], columns=['gender', 'ssc_p', 'ssc_b', 'hsc_p', 'hsc_b',
+                 'degree_p', 'workex', 'etest_p', 'specialisation',
+                 'mba_p', 'hsc_s_Commerce', 'hsc_s_Science',
+                 'degree_t_Others', 'degree_t_Sci&Tech'])
 
     #Making Prediction
     prediction = model.predict(input_data)[0]   #uses our saved model to predict
