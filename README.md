@@ -19,7 +19,7 @@ A Machine Learning web application that predicts whether a student will get plac
 - MBA percentage has very little impact on placement outcome
 - Class imbalance: 68.8% Placed vs 31.2% Not Placed
 
-## 🤖 Model Performance
+## Model Performance
 
 | Model | Accuracy | Overfitting |
 |-------|----------|-------------|
