@@ -53,7 +53,8 @@ pip install -r requirements.txt
 python -m streamlit run app/app.py
 ```
 
-## Project Structure
+##  Project Structure
+```
 placement-predictor/
 ├── data/
 │   ├── raw/                  ← Original dataset
@@ -69,6 +70,7 @@ placement-predictor/
 │   └── app.py
 ├── requirements.txt
 └── README.md
+```
 
 ## Author
 **Sumeet Mandal**
