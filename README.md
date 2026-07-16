@@ -19,12 +19,13 @@ A Machine Learning web application that predicts whether a student will get plac
 - MBA percentage has very little impact on placement outcome
 - Class imbalance: 68.8% Placed vs 31.2% Not Placed
 
-## Model Performance
-|       Model           | Accuracy  | Overfitting |
+## 🤖 Model Performance
 
-| Logistic Regression   | 83.72%    |   No        |
-| Decision Tree         | 83.72%    |   Yes       |
-| Random Forest         | 76.74%    |   Yes       |
+| Model | Accuracy | Overfitting |
+|-------|----------|-------------|
+| Logistic Regression | 83.72% | ✅ No |
+| Decision Tree | 83.72% | ⚠️ Yes |
+| Random Forest | 76.74% | ⚠️ Yes |
 
 **Best Model: Logistic Regression** — best generalization on small dataset
 
